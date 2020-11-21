@@ -33,40 +33,40 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Tests.Helpers
             Console.ForegroundColor = initialFgColor;
         }
 
-        [Test]
+        [Test, Order(0)]
         public void ProvideInstance()
         {
             Assert.IsInstanceOf<ColorsHelper>(helper);
         }
 
-        [Test]
+        [Test, Order(1)]
         public void ChangeConsoleColorsFromColorSet()
         {
             helper.LoadColorset(new ConsoleColorset { BackgroundColor = ConsoleColor.Red, ForegroundColor = ConsoleColor.Green });
-            Assert.AreEqual(Console.BackgroundColor, ConsoleColor.Red);
-            Assert.AreEqual(Console.ForegroundColor, ConsoleColor.Green);
+            Assert.AreEqual(ConsoleColor.Red, Console.BackgroundColor);
+            Assert.AreEqual(ConsoleColor.Green, Console.ForegroundColor);
         }
 
-        [Test]
+        [Test, Order(2)]
         public void ChangeConsoleColorsFromColorSetName()
         {
             helper.LoadColorset("inverted");
 
-            Assert.AreEqual(Console.BackgroundColor, ConsoleColor.White);
-            Assert.AreEqual(Console.ForegroundColor, ConsoleColor.Black);
+            Assert.AreEqual(ConsoleColor.White, Console.BackgroundColor);
+            Assert.AreEqual(ConsoleColor.Black, Console.ForegroundColor);
         }
 
-        [Test]
+        [Test, Order(3)]
         public void RevertToOriginalColors()
         {
             helper.LoadColorset("inverted");
             helper.RevertColors();
 
-            Assert.AreEqual(Console.BackgroundColor, initialBgColor);
-            Assert.AreEqual(Console.ForegroundColor, initialFgColor);
+            Assert.AreEqual(initialBgColor, Console.BackgroundColor);
+            Assert.AreEqual(initialFgColor, Console.ForegroundColor);
         }
 
-        [Test]
+        [Test, Order(4)]
         public void ThrowExceptionWhenRegisteringSameColorSetName()
         {
             Assert.Throws<ColorSetAlreadyRegisteredException>(delegate () {
@@ -74,7 +74,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Tests.Helpers
             });
         }
 
-        [Test]
+        [Test, Order(5)]
         public void ThrowExceptionWhenLoadingMissingColorSet()
         {
             Assert.Throws<ColorSetNotFoundException>(delegate ()
@@ -83,7 +83,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Tests.Helpers
             });
         }
 
-        [Test]
+        [Test, Order(6)]
         public void RegisterNewColorSet()
         {
             var colorSet = new ConsoleColorset
@@ -100,7 +100,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Tests.Helpers
             });
         }
 
-        [Test]
+        [Test, Order(7)]
         public void UnregisterColorSet()
         {
             helper.RegisterColorSet("testunregister", new ConsoleColorset());
@@ -113,7 +113,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Tests.Helpers
             });
         }
 
-        [Test]
+        [Test, Order(8)]
         public void ThrowExceptionOnUnregisterInvalidColorSet()
         {
             Assert.Throws<ColorSetNotFoundException>(delegate
