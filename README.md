@@ -6,7 +6,31 @@ Provides the static class `ConsoleExtended` witch helps to write easily in the c
 
 # How to install
 
-coming soon
+Choose the method you prefere.
+
+## Package Manager
+
+```sh
+Install-Package Kuschulem.DotNet.ConsoleHelpers -Version 1.0.0
+```
+
+## .Net CLI
+
+```sh
+dotnet add package Kuschulem.DotNet.ConsoleHelpers --version 1.0.0
+```
+
+## Package reference
+
+```xml
+<PackageReference Include="Kuschulem.DotNet.ConsoleHelpers" Version="1.0.0" />
+```
+
+## Paket CLI
+
+```sh
+paket add Kuschulem.DotNet.ConsoleHelpers --version 1.0.0
+```
 
 # Documentation
 
