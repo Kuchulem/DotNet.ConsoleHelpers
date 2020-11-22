@@ -1,6 +1,6 @@
 # DotNet.ConsoleHelpers
 
-[![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions.IEnumerables.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions.IEnumerables/)
+[![nuget](https://img.shields.io/nuget/v/Kuschulem.DotNet.ConsoleHelpers.svg)](https://www.nuget.org/packages/Kuschulem.DotNet.ConsoleHelpers/)
 
 Provides the static class `ConsoleExtended` witch helps to write easily in the console and extension methods to write clear debug.
 
