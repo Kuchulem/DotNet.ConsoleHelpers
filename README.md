@@ -1,6 +1,6 @@
 # DotNet.ConsoleHelpers
 
-[![nuget](https://img.shields.io/nuget/v/Kuschulem.DotNet.ConsoleHelpers.svg)](https://www.nuget.org/packages/Kuschulem.DotNet.ConsoleHelpers/)
+[![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.ConsoleHelpers.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
 
 Provides the static class `ConsoleExtended` witch helps to write easily in the console and extension methods to write clear debug.
 
@@ -11,25 +11,25 @@ Choose the method you prefere.
 ## Package Manager
 
 ```sh
-Install-Package Kuschulem.DotNet.ConsoleHelpers -Version 1.0.0
+Install-Package Kuchulem.DotNet.ConsoleHelpers -Version 1.0.0
 ```
 
 ## .Net CLI
 
 ```sh
-dotnet add package Kuschulem.DotNet.ConsoleHelpers --version 1.0.0
+dotnet add package Kuchulem.DotNet.ConsoleHelpers --version 1.0.0
 ```
 
 ## Package reference
 
 ```xml
-<PackageReference Include="Kuschulem.DotNet.ConsoleHelpers" Version="1.0.0" />
+<PackageReference Include="Kuchulem.DotNet.ConsoleHelpers" Version="1.0.0" />
 ```
 
 ## Paket CLI
 
 ```sh
-paket add Kuschulem.DotNet.ConsoleHelpers --version 1.0.0
+paket add Kuchulem.DotNet.ConsoleHelpers --version 1.0.0
 ```
 
 # Documentation
