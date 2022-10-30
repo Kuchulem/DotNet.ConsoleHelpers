@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6</TargetFramework>
     <Authors>Kuchulem</Authors>
     <Description>A ConsoleExtended static class to write in console and extension methods for objects to write clean debug lines</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Kuchulem.DotNet.Extensions.IEnumerables" Version="1.0.0.1" />
-    <PackageReference Include="Kuchulem.DotNet.Extensions.Strings" Version="1.0.0" />
+    <PackageReference Include="Kuchulem.DotNet.Extensions.Strings" Version="1.0.0.1" />
   </ItemGroup>
 
 </Project>

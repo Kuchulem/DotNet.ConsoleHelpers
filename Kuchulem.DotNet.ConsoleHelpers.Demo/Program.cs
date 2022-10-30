@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kuchulem.DotNet.ConsoleHelpers.Demo.Models;
+using System;
 using System.Collections.Generic;
 
 namespace Kuchulem.DotNet.ConsoleHelpers.Demo
@@ -55,6 +56,12 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Demo
             ConsoleExtended.WriteLine("Time to play with colors !", ConsoleTextAlignment.Left);
             ConsoleExtended.WriteLine("You can change foreground and background color for a single call of Console.WriteLine.", ConsoleTextAlignment.Left, ConsoleColor.Cyan, ConsoleColor.Magenta);
             ConsoleExtended.WriteLine("The following line will be back to the original color", ConsoleTextAlignment.Left);
+
+            ConsoleExtended.NewLine();
+            ConsoleExtended.WriteLine("Write info about method calls in console :", ConsoleTextAlignment.Left);
+            ConsoleExtended.WriteLine("You can use extension methods to write debug or info lines about method calls.", ConsoleTextAlignment.Left);
+            ConsoleExtended.WriteLine("Use the WriteInfoLine, WriteDebugLine, WriteErrorLine or WriteWarningLine extension methods (in objects)", ConsoleTextAlignment.Left);
+            (new DebugObject()).DoSomething("message");
 
             ConsoleExtended.NewLine();
             ConsoleExtended.WriteLine("That's all :) enjoy your console.", ConsoleTextAlignment.Left);
