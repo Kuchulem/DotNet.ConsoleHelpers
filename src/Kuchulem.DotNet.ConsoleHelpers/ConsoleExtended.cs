@@ -29,7 +29,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers
         {
             if (line.Contains(Environment.NewLine))
             {
-                foreach (var chunk in line.Split(Environment.NewLine))
+                foreach (var chunk in line.Split(new[] { Environment.NewLine }, StringSplitOptions.None))
                     WriteLine(chunk, alignment, backgroundColor, foregroundColor, fill);
 
                 return;
@@ -86,7 +86,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers
             Console.ForegroundColor = textForegroundColor;
             bool first = true;
 
-            foreach (var line in text.Split(Environment.NewLine))
+            foreach (var line in text.Split(new[] { Environment.NewLine }, StringSplitOptions.None))
                 foreach (var chunk in line.ToChunks(availableLength, true))
                 {
                     if (!first)
@@ -183,13 +183,12 @@ namespace Kuchulem.DotNet.ConsoleHelpers
 
         private static int ComputeSpacesBefore(int textWidth, int width, ConsoleTextAlignment alignment)
         {
-            return alignment switch
+            switch (alignment)
             {
-                ConsoleTextAlignment.Right => width - textWidth,
-                ConsoleTextAlignment.Center => (int)Math.Ceiling((double)((width - textWidth) / 2)),
-                _ => 0
-
-            };
+                case ConsoleTextAlignment.Right: return width - textWidth;
+                case ConsoleTextAlignment.Center: return (int)Math.Ceiling((double)((width - textWidth) / 2));
+                default: return 0;
+            }
         }
 
         private static void DoWriteString(string text, int width, ConsoleTextAlignment alignment, ConsoleColor? backgroundColor = null, ConsoleColor? foregroundColor = null, bool fill = false)

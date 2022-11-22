@@ -1,6 +1,9 @@
 # DotNet.ConsoleHelpers
 
-[![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.ConsoleHelpers.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
+[![NuGet Version](https://img.shields.io/nuget/v/Kuchulem.DotNet.ConsoleHelpers?label=Nuget%20version&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
+[![NuGet Preversion](https://img.shields.io/nuget/vpre/Kuchulem.DotNet.ConsoleHelpers?label=Nuget%20prerelease&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
+
+[![CodeQL](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml)
 
 Provides the static class `ConsoleExtended` witch helps to write easily in the console and extension methods to write clear debug.
 
@@ -11,30 +14,26 @@ Choose the method you prefere.
 ## Package Manager
 
 ```sh
-Install-Package Kuchulem.DotNet.ConsoleHelpers -Version 1.0.0
+Install-Package Kuchulem.DotNet.ConsoleHelpers -Version 1.1.0-beta.1
 ```
 
 ## .Net CLI
 
 ```sh
-dotnet add package Kuchulem.DotNet.ConsoleHelpers --version 1.0.0
+dotnet add package Kuchulem.DotNet.ConsoleHelpers --version 1.1.0-beta.1
 ```
 
 ## Package reference
 
 ```xml
-<PackageReference Include="Kuchulem.DotNet.ConsoleHelpers" Version="1.0.0" />
+<PackageReference Include="Kuchulem.DotNet.ConsoleHelpers" Version="1.1.0-beta.1" />
 ```
 
 ## Paket CLI
 
 ```sh
-paket add Kuchulem.DotNet.ConsoleHelpers --version 1.0.0
+paket add Kuchulem.DotNet.ConsoleHelpers --version 1.1.0-beta.1
 ```
-
-# Documentation
-
-coming soon
 
 # Usage
 
@@ -100,7 +99,7 @@ namespace ExtensionsDemo
 {
     class MyDemoClass
     {
-        public void DoSomthing()
+        public void DoSomething()
         {
             // Write a line of debug with info prefix
             this.WriteInfoLine("Some info");
