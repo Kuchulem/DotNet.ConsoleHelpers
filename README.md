@@ -124,3 +124,9 @@ Warn MyDemoClass.DoSomething : Some warning
 ```
 
 > Note that each prefix will have its own color : info -> grey, debug -> white, error -> red, warning -> yellow
+
+# Run the demo
+
+The solution includes a demo project : `Kuchulem.DotNet.ConsoleHelpers.Demo`.
+
+Run this project from your IDE to see the capabilities of the `Kuchulem.DotNet.ConsoleHelpers` library.
