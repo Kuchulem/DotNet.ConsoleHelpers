@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Kuchulem.DotNet.ConsoleHelpers\Kuchulem.DotNet.ConsoleHelpers.csproj" />
+    <ProjectReference Include="..\..\src\Kuchulem.DotNet.ConsoleHelpers\Kuchulem.DotNet.ConsoleHelpers.csproj" />
   </ItemGroup>
 
 </Project>
