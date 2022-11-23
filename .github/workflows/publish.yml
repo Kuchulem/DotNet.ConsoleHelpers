@@ -25,6 +25,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Pack
-      run: dotnet pack --output ./pack/
+      run: dotnet pack ./src/Kuchulem.DotNet.ConsoleHelpers/Kuchulem.DotNet.ConsoleHelpers.csproj --output ./pack/
     - name: Push
       run: dotnet nuget push ./pack/*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
