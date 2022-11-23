@@ -1,5 +1,4 @@
-﻿using Kuchulem.DotNet.Extensions.IEnumerables;
-using Kuchulem.DotNet.Extensions.Strings;
+﻿using Kuchulem.DotNet.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,7 +70,7 @@ namespace Kuchulem.DotNet.ConsoleHelpers
         /// <param name="backgroundColor"></param>
         /// <param name="prefixColor"></param>
         /// <param name="textColor"></param>
-        public static void WritePrefixedLine(string prefix, string text, ConsoleColor? backgroundColor = null, ConsoleColor? prefixColor = null, ConsoleColor? textColor = null)
+        public static void WritePrefixedLine(string prefix, string text, ConsoleColor? prefixBackgroundColor = null, ConsoleColor? backgroundColor = null, ConsoleColor? prefixColor = null, ConsoleColor? textColor = null)
         {
             var baseBackgroundColor = Console.BackgroundColor;
             var baseForegroundColor = Console.ForegroundColor;
@@ -81,8 +80,10 @@ namespace Kuchulem.DotNet.ConsoleHelpers
 
             var textForegroundColor = textColor ?? baseForegroundColor;
             var prefixForegroundColor = prefixColor ?? baseForegroundColor;
+            var textBackgroundColor = backgroundColor ?? baseBackgroundColor;
+            var prefixPartBackgroundColor = prefixBackgroundColor ?? baseBackgroundColor;
 
-            Console.BackgroundColor = backgroundColor ?? baseBackgroundColor;
+            Console.BackgroundColor = prefixPartBackgroundColor;
             Console.ForegroundColor = textForegroundColor;
             bool first = true;
 
@@ -91,18 +92,20 @@ namespace Kuchulem.DotNet.ConsoleHelpers
                 {
                     if (!first)
                     {
-                        Console.Write(new String(' ', spaces));
+                        Console.Write(new string(' ', spaces));
                     }
                     else
                     {
                         Console.ForegroundColor = prefixForegroundColor;
-                        Console.Write(prefix + ' ');
+                        Console.Write(prefix);
+                        Console.BackgroundColor = textBackgroundColor;
+                        Console.Write(' ');
                         Console.ForegroundColor = textForegroundColor;
                         first = false;
                     }
 
                     Console.Write(chunk);
-                    Console.WriteLine(new String(' ', availableLength - chunk.Length));
+                    Console.WriteLine(new string(' ', availableLength - chunk.Length));
                 }
 
             Console.BackgroundColor = baseBackgroundColor;

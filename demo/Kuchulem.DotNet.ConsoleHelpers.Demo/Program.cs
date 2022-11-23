@@ -64,6 +64,14 @@ namespace Kuchulem.DotNet.ConsoleHelpers.Demo
             (new DebugObject()).DoSomething("message");
 
             ConsoleExtended.NewLine();
+            ConsoleExtended.WriteLine("Prefixed lines :", ConsoleTextAlignment.Left);
+            ConsoleExtended.WriteLine("You can write prefixed lines withe the ConsoleExtended.WritePrefixLine method." +
+                Environment.NewLine +
+                "For example :", ConsoleTextAlignment.Left);
+            ConsoleExtended.WritePrefixedLine("My Prefix", "This is a prefixed line !", prefixBackgroundColor: ConsoleColor.White, prefixColor: ConsoleColor.Magenta);
+            ConsoleExtended.WriteLine("This is usefull for messages or debug.", ConsoleTextAlignment.Left);
+
+            ConsoleExtended.NewLine();
             ConsoleExtended.WriteLine("That's all :) enjoy your console.", ConsoleTextAlignment.Left);
         }
     }

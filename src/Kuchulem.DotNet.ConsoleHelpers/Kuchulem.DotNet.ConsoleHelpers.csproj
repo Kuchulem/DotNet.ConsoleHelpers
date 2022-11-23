@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>Kuchulem</Authors>
     <Description>A ConsoleExtended static class to write in console and extension methods for objects to write clean debug lines</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -9,7 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>console color alignment</PackageTags>
     <Company>Kuchulem</Company>
-    <Version>1.1.0-beta.1</Version>
+    <Version>2.0.0-beta.1</Version>
     <Copyright>2022 - Kuchulem</Copyright>
     <PackageProjectUrl>https://github.com/Kuchulem/DotNet.ConsoleHelpers</PackageProjectUrl>
     <PackageIcon>kuchulem-logo-transparent-bg-128.png</PackageIcon>
@@ -28,8 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kuchulem.DotNet.Extensions.IEnumerables" Version="1.0.0.1" />
-    <PackageReference Include="Kuchulem.DotNet.Extensions.Strings" Version="1.0.0.1" />
+    <PackageReference Include="Kuchulem.DotNet.Extensions" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
