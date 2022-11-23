@@ -14,25 +14,25 @@ Choose the method you prefere.
 ## Package Manager
 
 ```sh
-Install-Package Kuchulem.DotNet.ConsoleHelpers -Version 1.1.0-beta.1
+Install-Package Kuchulem.DotNet.ConsoleHelpers -Version 2.0.0-beta.1
 ```
 
 ## .Net CLI
 
 ```sh
-dotnet add package Kuchulem.DotNet.ConsoleHelpers --version 1.1.0-beta.1
+dotnet add package Kuchulem.DotNet.ConsoleHelpers --version 2.0.0-beta.1
 ```
 
 ## Package reference
 
 ```xml
-<PackageReference Include="Kuchulem.DotNet.ConsoleHelpers" Version="1.1.0-beta.1" />
+<PackageReference Include="Kuchulem.DotNet.ConsoleHelpers" Version="2.0.0-beta.1" />
 ```
 
 ## Paket CLI
 
 ```sh
-paket add Kuchulem.DotNet.ConsoleHelpers --version 1.1.0-beta.1
+paket add Kuchulem.DotNet.ConsoleHelpers --version 2.0.0-beta.1
 ```
 
 # Usage
