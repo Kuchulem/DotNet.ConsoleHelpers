@@ -3,7 +3,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/Kuchulem.DotNet.ConsoleHelpers?label=Nuget%20version&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
 [![NuGet Preversion](https://img.shields.io/nuget/vpre/Kuchulem.DotNet.ConsoleHelpers?label=Nuget%20prerelease&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.ConsoleHelpers/)
 
-[![CodeQL](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/Kuchulem/DotNet.ConsoleHelpers/actions/workflows/codeql.yml)
 
 Provides the static class `ConsoleExtended` witch helps to write easily in the console and extension methods to write clear debug.
 
